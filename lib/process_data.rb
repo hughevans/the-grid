@@ -74,7 +74,7 @@ class SA3CSV
   private
 
   def download_data
-    RestClient.get(ENV['SA3_DATASET']).body
+    RestClient.get(ENV['SA3_INNOVATION_DATASET_URL']).body
   end
 
   def convert_header(header)
